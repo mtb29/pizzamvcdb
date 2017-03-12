@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 /**
  * Create a connection to a MySQL database in the simplest fashion possible.
  *
- * @author John Phillips
+ * @author Matthew Brady
  * @version 20170304
  *
  */

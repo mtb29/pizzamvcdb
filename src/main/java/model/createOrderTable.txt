@@ -6,12 +6,14 @@ use jdoe;
 drop table if exists order_table;
 
 create table order_table (
+id int not null auto_increment,
 email varchar(50) not null,
 size varchar(10) not null,
 toppings varchar(50) not null,
-primary key (email));
+orderTime datetime not null,
+primary key (id));
 
-insert into order_table values("sue@ex.com", "large", "pepperoni");
-insert into order_table values("bob@mu.edu", "small", "none");
-insert into order_table values("beth@ex.com", "medium", "pepperoni, mushroom, pineapple");
+insert into order_table values(null, "sue@ex.com", "large", "pepperoni" now());
+insert into order_table values(null, "bob@mu.edu", "small", "none", now());
+insert into order_table values(null, "beth@ex.com", "medium", "pepperoni, mushroom, pineapple", now());
 
