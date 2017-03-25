@@ -13,7 +13,7 @@ toppings varchar(50) not null,
 orderTime datetime not null,
 primary key (id));
 
-insert into order_table values(null, "sue@ex.com", "large", "pepperoni" now());
+insert into order_table values(null, "sue@ex.com", "large", "pepperoni", now());
 insert into order_table values(null, "bob@mu.edu", "small", "none", now());
 insert into order_table values(null, "beth@ex.com", "medium", "pepperoni, mushroom, pineapple", now());
 
